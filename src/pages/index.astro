@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Links from "./_links.mdx";
+import { h1, p } from "../design_system/test.css";
+import { container, section } from "./index.css";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class={container}>
+    <h1 class:list={[h1, section]}>dburrows</h1>
+    <p class:list={[p, section]}>Some things I'm finding interesting</p>
+    <ul role="list" class="link-card-grid"></ul>
+    <Links />
+  </main>
+</Layout>
